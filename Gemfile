@@ -38,3 +38,14 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bcrypt', '~> 3.1.7'
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+end
+group :test do
+  gem 'capybara'
+end
+
+gem 'hirb'
+
