@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>All the recipes</title>
+</head>
+<body>
+	<h1>Look at these AWESOME recipes!</h1>
+	<ul>
+		<% @recipes.each do |r|%>
+		<li>
+			<p><b><a href="/recipes/<%= r.id %>"><%= r.name %></a></b></p>
+			<p><%= r.created_at %></p>
+
+		</li>
+		<% end %>
+	</ul>
+	<h3><a href="/recipes/new">Create you own!</a></h3>
+
+</body>
+</html>
