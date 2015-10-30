@@ -49,3 +49,6 @@ end
 
 gem 'hirb'
 
+gem 
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
