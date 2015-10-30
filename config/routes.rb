@@ -8,6 +8,15 @@ Rails.application.routes.draw do
 
   post "recipes" => "recipes#create"
 
+  get '/sessions' => "sessions#login" 
+
+  get '/recipes' => "recipes#index" 
+
+  get '/users' => "users#index"
+
+  get '/users/:id' => "users#show"
+
+  get '/user/create' => "users#create"
 
   
 
